@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"rfid_rc522\startup_stm32f103xb.o"
+"rfid_rc522\main.o"
+"rfid_rc522\stm32f1xx_it.o"
+"rfid_rc522\stm32f1xx_hal_msp.o"
+"rfid_rc522\rc522.o"
+"rfid_rc522\stm32f1xx_hal_gpio_ex.o"
+"rfid_rc522\stm32f1xx_hal_spi.o"
+"rfid_rc522\stm32f1xx_hal.o"
+"rfid_rc522\stm32f1xx_hal_rcc.o"
+"rfid_rc522\stm32f1xx_hal_rcc_ex.o"
+"rfid_rc522\stm32f1xx_hal_gpio.o"
+"rfid_rc522\stm32f1xx_hal_dma.o"
+"rfid_rc522\stm32f1xx_hal_cortex.o"
+"rfid_rc522\stm32f1xx_hal_pwr.o"
+"rfid_rc522\stm32f1xx_hal_flash.o"
+"rfid_rc522\stm32f1xx_hal_flash_ex.o"
+"rfid_rc522\stm32f1xx_hal_exti.o"
+"rfid_rc522\stm32f1xx_hal_tim.o"
+"rfid_rc522\stm32f1xx_hal_tim_ex.o"
+"rfid_rc522\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "RFID_RC522\RFID_RC522.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RFID_RC522.map" -o RFID_RC522\RFID_RC522.axf

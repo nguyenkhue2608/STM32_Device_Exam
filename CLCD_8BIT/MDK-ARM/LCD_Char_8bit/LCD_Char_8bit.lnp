@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"lcd_char_8bit\startup_stm32f103xb.o"
+"lcd_char_8bit\main.o"
+"lcd_char_8bit\stm32f1xx_it.o"
+"lcd_char_8bit\stm32f1xx_hal_msp.o"
+"lcd_char_8bit\clcd.o"
+"lcd_char_8bit\stm32f1xx_hal_gpio_ex.o"
+"lcd_char_8bit\stm32f1xx_hal_tim.o"
+"lcd_char_8bit\stm32f1xx_hal_tim_ex.o"
+"lcd_char_8bit\stm32f1xx_hal.o"
+"lcd_char_8bit\stm32f1xx_hal_rcc.o"
+"lcd_char_8bit\stm32f1xx_hal_rcc_ex.o"
+"lcd_char_8bit\stm32f1xx_hal_gpio.o"
+"lcd_char_8bit\stm32f1xx_hal_dma.o"
+"lcd_char_8bit\stm32f1xx_hal_cortex.o"
+"lcd_char_8bit\stm32f1xx_hal_pwr.o"
+"lcd_char_8bit\stm32f1xx_hal_flash.o"
+"lcd_char_8bit\stm32f1xx_hal_flash_ex.o"
+"lcd_char_8bit\stm32f1xx_hal_exti.o"
+"lcd_char_8bit\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "LCD_Char_8bit\LCD_Char_8bit.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LCD_Char_8bit.map" -o LCD_Char_8bit\LCD_Char_8bit.axf

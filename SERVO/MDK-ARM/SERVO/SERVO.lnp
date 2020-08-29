@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"servo\startup_stm32f103xb.o"
+"servo\main.o"
+"servo\stm32f1xx_it.o"
+"servo\stm32f1xx_hal_msp.o"
+"servo\stm32f1xx_hal_gpio_ex.o"
+"servo\stm32f1xx_hal_tim.o"
+"servo\stm32f1xx_hal_tim_ex.o"
+"servo\stm32f1xx_hal.o"
+"servo\stm32f1xx_hal_rcc.o"
+"servo\stm32f1xx_hal_rcc_ex.o"
+"servo\stm32f1xx_hal_gpio.o"
+"servo\stm32f1xx_hal_dma.o"
+"servo\stm32f1xx_hal_cortex.o"
+"servo\stm32f1xx_hal_pwr.o"
+"servo\stm32f1xx_hal_flash.o"
+"servo\stm32f1xx_hal_flash_ex.o"
+"servo\stm32f1xx_hal_exti.o"
+"servo\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "SERVO\SERVO.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SERVO.map" -o SERVO\SERVO.axf

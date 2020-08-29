@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"tft_lcd_ili9341\startup_stm32f103xb.o"
+"tft_lcd_ili9341\main.o"
+"tft_lcd_ili9341\stm32f1xx_it.o"
+"tft_lcd_ili9341\stm32f1xx_hal_msp.o"
+"tft_lcd_ili9341\stm32f1xx_hal_gpio_ex.o"
+"tft_lcd_ili9341\stm32f1xx_hal_tim.o"
+"tft_lcd_ili9341\stm32f1xx_hal_tim_ex.o"
+"tft_lcd_ili9341\stm32f1xx_hal.o"
+"tft_lcd_ili9341\stm32f1xx_hal_rcc.o"
+"tft_lcd_ili9341\stm32f1xx_hal_rcc_ex.o"
+"tft_lcd_ili9341\stm32f1xx_hal_gpio.o"
+"tft_lcd_ili9341\stm32f1xx_hal_dma.o"
+"tft_lcd_ili9341\stm32f1xx_hal_cortex.o"
+"tft_lcd_ili9341\stm32f1xx_hal_pwr.o"
+"tft_lcd_ili9341\stm32f1xx_hal_flash.o"
+"tft_lcd_ili9341\stm32f1xx_hal_flash_ex.o"
+"tft_lcd_ili9341\stm32f1xx_hal_exti.o"
+"tft_lcd_ili9341\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "TFT_LCD_ILI9341\TFT_LCD_ILI9341.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TFT_LCD_ILI9341.map" -o TFT_LCD_ILI9341\TFT_LCD_ILI9341.axf

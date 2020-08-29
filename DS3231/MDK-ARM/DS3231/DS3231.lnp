@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"ds3231\startup_stm32f103xb.o"
+"ds3231\main.o"
+"ds3231\stm32f1xx_it.o"
+"ds3231\stm32f1xx_hal_msp.o"
+"ds3231\ds3231.o"
+"ds3231\stm32f1xx_hal_gpio_ex.o"
+"ds3231\stm32f1xx_hal_i2c.o"
+"ds3231\stm32f1xx_hal.o"
+"ds3231\stm32f1xx_hal_rcc.o"
+"ds3231\stm32f1xx_hal_rcc_ex.o"
+"ds3231\stm32f1xx_hal_gpio.o"
+"ds3231\stm32f1xx_hal_dma.o"
+"ds3231\stm32f1xx_hal_cortex.o"
+"ds3231\stm32f1xx_hal_pwr.o"
+"ds3231\stm32f1xx_hal_flash.o"
+"ds3231\stm32f1xx_hal_flash_ex.o"
+"ds3231\stm32f1xx_hal_exti.o"
+"ds3231\stm32f1xx_hal_tim.o"
+"ds3231\stm32f1xx_hal_tim_ex.o"
+"ds3231\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "DS3231\DS3231.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DS3231.map" -o DS3231\DS3231.axf

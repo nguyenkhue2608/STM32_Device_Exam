@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"keypad\startup_stm32f103xb.o"
+"keypad\main.o"
+"keypad\stm32f1xx_it.o"
+"keypad\stm32f1xx_hal_msp.o"
+"keypad\keypad.o"
+"keypad\stm32f1xx_hal_gpio_ex.o"
+"keypad\stm32f1xx_hal_i2c.o"
+"keypad\stm32f1xx_hal.o"
+"keypad\stm32f1xx_hal_rcc.o"
+"keypad\stm32f1xx_hal_rcc_ex.o"
+"keypad\stm32f1xx_hal_gpio.o"
+"keypad\stm32f1xx_hal_dma.o"
+"keypad\stm32f1xx_hal_cortex.o"
+"keypad\stm32f1xx_hal_pwr.o"
+"keypad\stm32f1xx_hal_flash.o"
+"keypad\stm32f1xx_hal_flash_ex.o"
+"keypad\stm32f1xx_hal_exti.o"
+"keypad\stm32f1xx_hal_tim.o"
+"keypad\stm32f1xx_hal_tim_ex.o"
+"keypad\stm32f1xx_hal_uart.o"
+"keypad\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "KEYPAD\KEYPAD.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "KEYPAD.map" -o KEYPAD\KEYPAD.axf

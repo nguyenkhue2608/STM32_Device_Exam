@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"dfplayer_uart\startup_stm32f103xb.o"
+"dfplayer_uart\main.o"
+"dfplayer_uart\stm32f1xx_it.o"
+"dfplayer_uart\stm32f1xx_hal_msp.o"
+"dfplayer_uart\dfplayer.o"
+"dfplayer_uart\stm32f1xx_hal_gpio_ex.o"
+"dfplayer_uart\stm32f1xx_hal_tim.o"
+"dfplayer_uart\stm32f1xx_hal_tim_ex.o"
+"dfplayer_uart\stm32f1xx_hal_uart.o"
+"dfplayer_uart\stm32f1xx_hal.o"
+"dfplayer_uart\stm32f1xx_hal_rcc.o"
+"dfplayer_uart\stm32f1xx_hal_rcc_ex.o"
+"dfplayer_uart\stm32f1xx_hal_gpio.o"
+"dfplayer_uart\stm32f1xx_hal_dma.o"
+"dfplayer_uart\stm32f1xx_hal_cortex.o"
+"dfplayer_uart\stm32f1xx_hal_pwr.o"
+"dfplayer_uart\stm32f1xx_hal_flash.o"
+"dfplayer_uart\stm32f1xx_hal_flash_ex.o"
+"dfplayer_uart\stm32f1xx_hal_exti.o"
+"dfplayer_uart\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "DFPlayer_UART\DFPlayer_UART.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DFPlayer_UART.map" -o DFPlayer_UART\DFPlayer_UART.axf

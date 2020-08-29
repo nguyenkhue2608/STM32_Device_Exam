@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"clcd_4bit\startup_stm32f103xb.o"
+"clcd_4bit\main.o"
+"clcd_4bit\stm32f1xx_it.o"
+"clcd_4bit\stm32f1xx_hal_msp.o"
+"clcd_4bit\clcd.o"
+"clcd_4bit\stm32f1xx_hal_gpio_ex.o"
+"clcd_4bit\stm32f1xx_hal_tim.o"
+"clcd_4bit\stm32f1xx_hal_tim_ex.o"
+"clcd_4bit\stm32f1xx_hal.o"
+"clcd_4bit\stm32f1xx_hal_rcc.o"
+"clcd_4bit\stm32f1xx_hal_rcc_ex.o"
+"clcd_4bit\stm32f1xx_hal_gpio.o"
+"clcd_4bit\stm32f1xx_hal_dma.o"
+"clcd_4bit\stm32f1xx_hal_cortex.o"
+"clcd_4bit\stm32f1xx_hal_pwr.o"
+"clcd_4bit\stm32f1xx_hal_flash.o"
+"clcd_4bit\stm32f1xx_hal_flash_ex.o"
+"clcd_4bit\stm32f1xx_hal_exti.o"
+"clcd_4bit\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "CLCD_4BIT\CLCD_4BIT.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CLCD_4BIT.map" -o CLCD_4BIT\CLCD_4BIT.axf
