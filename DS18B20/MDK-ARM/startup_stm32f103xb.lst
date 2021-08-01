@@ -462,12 +462,12 @@ ARM Macro Assembler    Page 8
               00000000 
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
-ork --depend=ds18b20\startup_stm32f103xb.d -ods18b20\startup_stm32f103xb.o -ID:
-\Example\DS18B20\MDK-ARM\RTE\_DS18B20 -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0\CMS
-IS\Include -IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include --pred
-efine="__EVAL SETA 1" --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VE
-RSION SETA 522" --predefine="_RTE_ SETA 1" --predefine="STM32F10X_MD SETA 1" --
-list=startup_stm32f103xb.lst startup_stm32f103xb.s
+ork --depend=ds18b20\startup_stm32f103xb.d -ods18b20\startup_stm32f103xb.o -I.\
+RTE\_DS18B20 -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.7.0\CMSIS\Core\Include -IC:\Keil
+_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include --predefine="__MICROLIB SE
+TA 1" --predefine="__UVISION_VERSION SETA 531" --predefine="_RTE_ SETA 1" --pre
+define="STM32F10X_MD SETA 1" --predefine="_RTE_ SETA 1" --list=startup_stm32f10
+3xb.lst startup_stm32f103xb.s
 
 
 
@@ -1174,4 +1174,4 @@ Symbol: __main
       At line 135 in file startup_stm32f103xb.s
 Comment: __main used once
 2 symbols
-407 symbols in table
+406 symbols in table

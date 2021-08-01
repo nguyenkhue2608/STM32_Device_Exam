@@ -1,5 +1,5 @@
-keypad\keypad.o: D:\Common Lib\Device Lib\Src\KEYPAD.c
-keypad\keypad.o: D:\Common Lib\Device Lib\Inc\KEYPAD.h
+keypad\keypad.o: E:\Thu Vien Device STM32\Device Lib\Src\KEYPAD.c
+keypad\keypad.o: E:\Thu Vien Device STM32\Device Lib\Inc\KEYPAD.h
 keypad\keypad.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 keypad\keypad.o: ../Inc/stm32f1xx_hal_conf.h
 keypad\keypad.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h

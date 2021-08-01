@@ -1,4 +1,4 @@
-dht11\dht.o: ..\Src\DHT.c
+dht11\dht.o: E:\STM32 Device Lib\Device Lib\Src\DHT.c
 dht11\dht.o: ../Inc/DHT.h
 dht11\dht.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 dht11\dht.o: ../Inc/stm32f1xx_hal_conf.h
@@ -26,4 +26,4 @@ dht11\dht.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 dht11\dht.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 dht11\dht.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 dht11\dht.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
-dht11\dht.o: D:\Common Lib\DELAY_TIMER\inc\delay_timer.h
+dht11\dht.o: E:\STM32 Device Lib\DELAY_TIMER\inc\delay_timer.h

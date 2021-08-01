@@ -24,5 +24,5 @@ lcd_char_8bit\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
 lcd_char_8bit\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 lcd_char_8bit\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 lcd_char_8bit\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-lcd_char_8bit\main.o: D:\Common Lib\Device Lib\Inc\CLCD.h
+lcd_char_8bit\main.o: E:\STM32 Device Lib\Device Lib\Inc\CLCD.h
 lcd_char_8bit\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

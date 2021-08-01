@@ -26,4 +26,4 @@ keypad\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 keypad\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
 keypad\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 keypad\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-keypad\main.o: D:\Common Lib\Device Lib\Inc\KEYPAD.h
+keypad\main.o: E:\Thu Vien Device STM32\Device Lib\Inc\KEYPAD.h

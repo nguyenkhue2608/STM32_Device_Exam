@@ -1,5 +1,5 @@
-oled_lcd\oled_lcd_ssd1306.o: D:\Common Lib\Device Lib\Src\OLED_LCD_SSD1306.c
-oled_lcd\oled_lcd_ssd1306.o: D:\Common Lib\Device Lib\Inc\OLED_LCD_SSD1306.h
+oled_lcd\oled_lcd_ssd1306.o: E:\STM32 Device Lib\Device Lib\Src\OLED_LCD_SSD1306.c
+oled_lcd\oled_lcd_ssd1306.o: E:\STM32 Device Lib\Device Lib\Inc\OLED_LCD_SSD1306.h
 oled_lcd\oled_lcd_ssd1306.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 oled_lcd\oled_lcd_ssd1306.o: ../Inc/stm32f1xx_hal_conf.h
 oled_lcd\oled_lcd_ssd1306.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h

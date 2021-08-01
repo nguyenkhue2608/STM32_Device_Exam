@@ -20,10 +20,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-uint8_t data[4]={"aaaa"};
 
 /* USER CODE END Includes */
 #include "CLCD_I2C.h"
@@ -91,8 +89,10 @@ int main(void)
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
 	CLCD_I2C_Init(&LCD1,&hi2c1,0x4e,20,4);
+	CLCD_I2C_SetCursor(&LCD1, 0, 0);
+	CLCD_I2C_WriteString(&LCD1,"Khue Nguyen Creator");
 	CLCD_I2C_SetCursor(&LCD1, 0, 1);
-	CLCD_I2C_WriteString(&LCD1,"hello anh em ");
+	CLCD_I2C_WriteString(&LCD1,"Hello anh em !");
   /* USER CODE END 2 */
 
   /* Infinite loop */

@@ -1,5 +1,5 @@
-lcd_char_8bit\clcd.o: D:\Common Lib\Device Lib\Src\CLCD.c
-lcd_char_8bit\clcd.o: D:\Common Lib\Device Lib\Inc\CLCD.h
+lcd_char_8bit\clcd.o: E:\STM32 Device Lib\Device Lib\Src\CLCD.c
+lcd_char_8bit\clcd.o: E:\STM32 Device Lib\Device Lib\Inc\CLCD.h
 lcd_char_8bit\clcd.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 lcd_char_8bit\clcd.o: ../Inc/stm32f1xx_hal_conf.h
 lcd_char_8bit\clcd.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h

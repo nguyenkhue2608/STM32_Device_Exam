@@ -120,6 +120,7 @@ int main(void)
 		{
 			HAL_UART_Transmit(&huart1, (uint8_t*)&Key, 1, 100);
 		}
+		HAL_Delay(50);
   }
   /* USER CODE END 3 */
 }

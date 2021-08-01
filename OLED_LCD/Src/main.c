@@ -26,8 +26,16 @@
 //#include "ssd1306.h"
 #include "OLED_LCD_SSD1306.h"
 #include "test.h"
-#include "horse_anim.h"
-#include "bitmap.h"
+#include "logo2.h"
+#include "1.h"
+#include "2.h"
+#include "3.h"
+#include "4.h"
+#include "5.h"
+#include "6.h"
+#include "7.h"
+#include "8.h"
+#include "9.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -106,6 +114,7 @@ int main(void)
   {
     /* USER CODE END WHILE */
     /* USER CODE BEGIN 3 */
+		//display shape
 		TestLines(1);
     HAL_Delay (1000);
     TestRectangles(1);
@@ -116,98 +125,70 @@ int main(void)
     HAL_Delay (1000);
     TestFilledCircles(6, 1);
     TestTriangles(1);
-		SSD1306_GotoXY (&SSD1306, 0,0);
+		HAL_Delay (1000);
+		
+		//display text
+		SSD1306_Clear(&SSD1306);
+		SSD1306_GotoXY (&SSD1306, 1,1);
     SSD1306_Puts (&SSD1306, "KHUE NGUYEN", &Font_11x18, SSD1306_COLOR_WHITE);
     SSD1306_GotoXY (&SSD1306, 10, 30);
     SSD1306_Puts (&SSD1306,"  CREATOR", &Font_11x18, SSD1306_COLOR_WHITE);
     SSD1306_UpdateScreen(&SSD1306); //display
-
     HAL_Delay (2000);
-		SSD1306_Fill(&SSD1306, SSD1306_COLOR_WHITE);
-		SSD1306_UpdateScreen(&SSD1306); //display
-		HAL_Delay (2000);
-    SSD1306_ScrollRight(&SSD1306, 0,7);  // scroll entire screen
-    HAL_Delay(2000);  // 2 sec
-
-    SSD1306_ScrollLeft(&SSD1306, 0,7);  // scroll entire screen
-    HAL_Delay(2000);  // 2 sec
-
-    SSD1306_Stopscroll(&SSD1306);
-    SSD1306_Clear(&SSD1306);
-
-    SSD1306_DrawBitmap(&SSD1306, 0,0,logo, 128, 64, SSD1306_COLOR_WHITE);
-    SSD1306_UpdateScreen(&SSD1306);
-
-    HAL_Delay(2000);
-
-    SSD1306_ScrollRight(&SSD1306, 0x00, 0x0f);    // scroll entire screen right
-
-    HAL_Delay (2000);
-
-    SSD1306_ScrollLeft(&SSD1306, 0x00, 0x0f);  // scroll entire screen left
-
-    HAL_Delay (2000);
-
-    SSD1306_Scrolldiagright(&SSD1306, 0x00, 0x0f);  // scroll entire screen diagonal right
-
-    HAL_Delay (2000);
-
-    SSD1306_Scrolldiagleft(&SSD1306, 0x00, 0x0f);  // scroll entire screen diagonal left
-
-    HAL_Delay (2000);
-
-    SSD1306_Stopscroll(&SSD1306);   // stop scrolling. If not done, screen will keep on scrolling
-
-
-    SSD1306_InvertDisplay(&SSD1306, 1);   // invert the display
-
-    HAL_Delay(2000);
-
-    SSD1306_InvertDisplay(&SSD1306, 0);  // normalize the display
-
-
-    HAL_Delay(2000);
+		
+		//display image
 		SSD1306_Clear(&SSD1306);
-	  SSD1306_DrawBitmap(&SSD1306,0,0,horse1,128,64,SSD1306_COLOR_WHITE);
-	  SSD1306_UpdateScreen(&SSD1306);
-
-	  SSD1306_Clear(&SSD1306);
-	  SSD1306_DrawBitmap(&SSD1306,0,0,horse2,128,64,SSD1306_COLOR_WHITE);
-	  SSD1306_UpdateScreen(&SSD1306);
-
-	  SSD1306_Clear(&SSD1306);
-	  SSD1306_DrawBitmap(&SSD1306,0,0,horse3,128,64,SSD1306_COLOR_WHITE);
-	  SSD1306_UpdateScreen(&SSD1306);
-
-	  SSD1306_Clear(&SSD1306);
-	  SSD1306_DrawBitmap(&SSD1306,0,0,horse4,128,64,SSD1306_COLOR_WHITE);
-	  SSD1306_UpdateScreen(&SSD1306);
-
-	  SSD1306_Clear(&SSD1306);
-	  SSD1306_DrawBitmap(&SSD1306,0,0,horse5,128,64,SSD1306_COLOR_WHITE);
-	  SSD1306_UpdateScreen(&SSD1306);
-
-	  SSD1306_Clear(&SSD1306);
-	  SSD1306_DrawBitmap(&SSD1306,0,0,horse6,128,64,SSD1306_COLOR_WHITE);
-	  SSD1306_UpdateScreen(&SSD1306);
-
-
-	  SSD1306_Clear(&SSD1306);
-	  SSD1306_DrawBitmap(&SSD1306,0,0,horse7,128,64,SSD1306_COLOR_WHITE);
-	  SSD1306_UpdateScreen(&SSD1306);
-
-	  SSD1306_Clear(&SSD1306);
-	  SSD1306_DrawBitmap(&SSD1306, 0,0,horse8,128,64,SSD1306_COLOR_WHITE);
-	  SSD1306_UpdateScreen(&SSD1306);
-
-
-	  SSD1306_Clear(&SSD1306);
-	  SSD1306_DrawBitmap(&SSD1306,0,0,horse9,128,64,SSD1306_COLOR_WHITE);
-	  SSD1306_UpdateScreen(&SSD1306);
-
-	  SSD1306_Clear(&SSD1306);
-	  SSD1306_DrawBitmap(&SSD1306,0,0,horse10,128,64,SSD1306_COLOR_WHITE);
-	  SSD1306_UpdateScreen(&SSD1306);
+    SSD1306_DrawBitmap(&SSD1306, 0,0,gImage_logo2, 132, 64, SSD1306_COLOR_WHITE);
+    SSD1306_UpdateScreen(&SSD1306);
+    HAL_Delay(5000);
+		
+		// scroll image
+//    SSD1306_ScrollRight(&SSD1306, 0x00, 0x0f);    // scroll entire screen right
+//    HAL_Delay (2000);
+//    SSD1306_ScrollLeft(&SSD1306, 0x00, 0x0f);  // scroll entire screen left
+//    HAL_Delay (2000);
+//    SSD1306_Scrolldiagright(&SSD1306, 0x00, 0x0f);  // scroll entire screen diagonal right
+//    HAL_Delay (2000);
+//    SSD1306_Scrolldiagleft(&SSD1306, 0x00, 0x0f);  // scroll entire screen diagonal left
+//    HAL_Delay (2000);
+//    SSD1306_Stopscroll(&SSD1306);   // stop scrolling. If not done, screen will keep on scrolling
+//    SSD1306_InvertDisplay(&SSD1306, 1);   // invert the display
+//    HAL_Delay(2000);
+//    SSD1306_InvertDisplay(&SSD1306, 0);  // normalize the display
+//    HAL_Delay(2000);
+		
+		//display animation
+		uint8_t loop = 5;
+		while(loop--)
+		{
+			SSD1306_Clear(&SSD1306);
+			SSD1306_DrawBitmap(&SSD1306,0,0,gImage_1,132,64,SSD1306_COLOR_WHITE);
+			SSD1306_UpdateScreen(&SSD1306);
+			SSD1306_Clear(&SSD1306);
+			SSD1306_DrawBitmap(&SSD1306,0,0,gImage_2,132,64,SSD1306_COLOR_WHITE);
+			SSD1306_UpdateScreen(&SSD1306);
+			SSD1306_Clear(&SSD1306);
+			SSD1306_DrawBitmap(&SSD1306,0,0,gImage_3,132,64,SSD1306_COLOR_WHITE);
+			SSD1306_UpdateScreen(&SSD1306);
+			SSD1306_Clear(&SSD1306);
+			SSD1306_DrawBitmap(&SSD1306,0,0,gImage_4,132,64,SSD1306_COLOR_WHITE);
+			SSD1306_UpdateScreen(&SSD1306);
+			SSD1306_Clear(&SSD1306);
+			SSD1306_DrawBitmap(&SSD1306,0,0,gImage_5,132,64,SSD1306_COLOR_WHITE);
+			SSD1306_UpdateScreen(&SSD1306);
+			SSD1306_Clear(&SSD1306);
+			SSD1306_DrawBitmap(&SSD1306,0,0,gImage_6,132,64,SSD1306_COLOR_WHITE);
+			SSD1306_UpdateScreen(&SSD1306);
+			SSD1306_Clear(&SSD1306);
+			SSD1306_DrawBitmap(&SSD1306,0,0,gImage_7,132,64,SSD1306_COLOR_WHITE);
+			SSD1306_UpdateScreen(&SSD1306);
+			SSD1306_Clear(&SSD1306);
+			SSD1306_DrawBitmap(&SSD1306, 0,0,gImage_8,132,64,SSD1306_COLOR_WHITE);
+			SSD1306_UpdateScreen(&SSD1306);
+			SSD1306_Clear(&SSD1306);
+			SSD1306_DrawBitmap(&SSD1306,0,0,gImage_9,132,64,SSD1306_COLOR_WHITE);
+			SSD1306_UpdateScreen(&SSD1306);
+		}
 	}
   /* USER CODE END 3 */
 }

@@ -24,5 +24,5 @@ clcd_4bit\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
 clcd_4bit\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 clcd_4bit\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 clcd_4bit\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-clcd_4bit\main.o: D:\Common Lib\Device Lib\Inc\CLCD.h
+clcd_4bit\main.o: E:\STM32 Device Lib\Device Lib\Inc\CLCD.h
 clcd_4bit\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

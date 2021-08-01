@@ -1,5 +1,5 @@
-clcd_i2c\clcd_i2c.o: D:\Common Lib\Device Lib\Src\CLCD_I2C.c
-clcd_i2c\clcd_i2c.o: D:\Common Lib\Device Lib\Inc\CLCD_I2C.h
+clcd_i2c\clcd_i2c.o: E:\STM32 Device Lib\Device Lib\Src\CLCD_I2C.c
+clcd_i2c\clcd_i2c.o: E:\STM32 Device Lib\Device Lib\Inc\CLCD_I2C.h
 clcd_i2c\clcd_i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 clcd_i2c\clcd_i2c.o: ../Inc/stm32f1xx_hal_conf.h
 clcd_i2c\clcd_i2c.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h

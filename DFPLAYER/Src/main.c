@@ -92,7 +92,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	DFPLAYER_Init(&MP3, &huart1);
   /* USER CODE END 2 */
-
+//
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -100,8 +100,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		DFPLAYER_Play(&MP3);
-		HAL_Delay(6000);
+		DFPLAYER_PlayFileInFolder(&MP3,2,1);
+		HAL_Delay(10000);
   }
   /* USER CODE END 3 */
 }

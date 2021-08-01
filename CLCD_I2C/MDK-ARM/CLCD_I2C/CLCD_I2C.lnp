@@ -20,6 +20,6 @@
 "clcd_i2c\stm32f1xx_hal_tim_ex.o"
 "clcd_i2c\system_stm32f1xx.o"
 --library_type=microlib --strict --scatter "CLCD_I2C\CLCD_I2C.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "CLCD_I2C.map" -o CLCD_I2C\CLCD_I2C.axf

@@ -19,6 +19,6 @@
 "clcd_4bit\stm32f1xx_hal_exti.o"
 "clcd_4bit\system_stm32f1xx.o"
 --library_type=microlib --strict --scatter "CLCD_4BIT\CLCD_4BIT.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "CLCD_4BIT.map" -o CLCD_4BIT\CLCD_4BIT.axf

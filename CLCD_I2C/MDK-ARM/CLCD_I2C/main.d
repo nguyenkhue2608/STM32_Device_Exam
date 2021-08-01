@@ -25,4 +25,4 @@ clcd_i2c\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 clcd_i2c\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 clcd_i2c\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
 clcd_i2c\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-clcd_i2c\main.o: D:\Common Lib\Device Lib\Inc\CLCD_I2C.h
+clcd_i2c\main.o: E:\STM32 Device Lib\Device Lib\Inc\CLCD_I2C.h

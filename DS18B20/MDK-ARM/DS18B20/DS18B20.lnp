@@ -3,8 +3,8 @@
 "ds18b20\main.o"
 "ds18b20\stm32f1xx_it.o"
 "ds18b20\stm32f1xx_hal_msp.o"
-"ds18b20\delay_timer.o"
 "ds18b20\ds18b20.o"
+"ds18b20\delay_timer.o"
 "ds18b20\stm32f1xx_hal_gpio_ex.o"
 "ds18b20\stm32f1xx_hal_tim.o"
 "ds18b20\stm32f1xx_hal_tim_ex.o"
@@ -20,6 +20,6 @@
 "ds18b20\stm32f1xx_hal_exti.o"
 "ds18b20\system_stm32f1xx.o"
 --library_type=microlib --strict --scatter "DS18B20\DS18B20.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "DS18B20.map" -o DS18B20\DS18B20.axf

@@ -26,4 +26,4 @@ ds18b20\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 ds18b20\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 ds18b20\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 ds18b20\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
-ds18b20\main.o: D:\Common Lib\Device Lib\Inc\DS18B20.h
+ds18b20\main.o: E:\STM32 Device Lib\Device Lib\Inc\DS18B20.h

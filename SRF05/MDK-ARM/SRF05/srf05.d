@@ -1,5 +1,5 @@
-srf05\srf05.o: D:\Common Lib\Device Lib\Src\SRF05.c
-srf05\srf05.o: D:\Common Lib\Device Lib\Inc\SRF05.h
+srf05\srf05.o: E:\STM32 Device Lib\Device Lib\Src\SRF05.c
+srf05\srf05.o: E:\STM32 Device Lib\Device Lib\Inc\SRF05.h
 srf05\srf05.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 srf05\srf05.o: ../Inc/stm32f1xx_hal_conf.h
 srf05\srf05.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
@@ -26,3 +26,4 @@ srf05\srf05.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 srf05\srf05.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 srf05\srf05.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 srf05\srf05.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+srf05\srf05.o: E:\STM32 Device Lib\DELAY_TIMER\inc\delay_timer.h

@@ -26,4 +26,4 @@ srf05\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 srf05\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 srf05\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 srf05\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
-srf05\main.o: D:\Common Lib\Device Lib\Inc\srf05.h
+srf05\main.o: E:\STM32 Device Lib\Device Lib\Inc\srf05.h

@@ -33,6 +33,7 @@ Section Cross References
     main.o(i.main) refers to keypad.o(i.KEYPAD3X4_Init) for KEYPAD3X4_Init
     main.o(i.main) refers to keypad.o(i.KEYPAD3X4_Readkey) for KEYPAD3X4_Readkey
     main.o(i.main) refers to stm32f1xx_hal_uart.o(i.HAL_UART_Transmit) for HAL_UART_Transmit
+    main.o(i.main) refers to stm32f1xx_hal.o(i.HAL_Delay) for HAL_Delay
     main.o(i.main) refers to main.o(.bss) for .bss
     main.o(i.main) refers to main.o(.data) for .data
     stm32f1xx_it.o(i.I2C1_ER_IRQHandler) refers to stm32f1xx_hal_i2c.o(i.HAL_I2C_ER_IRQHandler) for HAL_I2C_ER_IRQHandler
@@ -708,8 +709,8 @@ Image Symbol Table
     ..\Src\stm32f1xx_hal_msp.c               0x00000000   Number         0  stm32f1xx_hal_msp.o ABSOLUTE
     ..\Src\stm32f1xx_it.c                    0x00000000   Number         0  stm32f1xx_it.o ABSOLUTE
     ..\Src\system_stm32f1xx.c                0x00000000   Number         0  system_stm32f1xx.o ABSOLUTE
-    D:\Common Lib\Device Lib\Src\KEYPAD.c    0x00000000   Number         0  keypad.o ABSOLUTE
-    D:\\Common Lib\\Device Lib\\Src\\KEYPAD.c 0x00000000   Number         0  keypad.o ABSOLUTE
+    E:\Thu Vien Device STM32\Device Lib\Src\KEYPAD.c 0x00000000   Number         0  keypad.o ABSOLUTE
+    E:\\Thu Vien Device STM32\\Device Lib\\Src\\KEYPAD.c 0x00000000   Number         0  keypad.o ABSOLUTE
     dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
     handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
     init.s                                   0x00000000   Number         0  init.o ABSOLUTE
@@ -825,8 +826,8 @@ Image Symbol Table
     i.__scatterload_null                     0x08001f7c   Section        2  handlers.o(i.__scatterload_null)
     i.__scatterload_zeroinit                 0x08001f7e   Section       14  handlers.o(i.__scatterload_zeroinit)
     i.main                                   0x08001f8c   Section        0  main.o(i.main)
-    .constdata                               0x0800204c   Section       16  system_stm32f1xx.o(.constdata)
-    .constdata                               0x0800205c   Section        8  system_stm32f1xx.o(.constdata)
+    .constdata                               0x08002050   Section       16  system_stm32f1xx.o(.constdata)
+    .constdata                               0x08002060   Section        8  system_stm32f1xx.o(.constdata)
     .data                                    0x20000000   Section       13  main.o(.data)
     .data                                    0x20000010   Section       12  stm32f1xx_hal.o(.data)
     .data                                    0x2000001c   Section        4  system_stm32f1xx.o(.data)
@@ -966,11 +967,11 @@ Image Symbol Table
     __scatterload_copy                       0x08001f6f   Thumb Code    14  handlers.o(i.__scatterload_copy)
     __scatterload_null                       0x08001f7d   Thumb Code     2  handlers.o(i.__scatterload_null)
     __scatterload_zeroinit                   0x08001f7f   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    main                                     0x08001f8d   Thumb Code   166  main.o(i.main)
-    AHBPrescTable                            0x0800204c   Data          16  system_stm32f1xx.o(.constdata)
-    APBPrescTable                            0x0800205c   Data           8  system_stm32f1xx.o(.constdata)
-    Region$$Table$$Base                      0x08002064   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08002084   Number         0  anon$$obj.o(Region$$Table)
+    main                                     0x08001f8d   Thumb Code   170  main.o(i.main)
+    AHBPrescTable                            0x08002050   Data          16  system_stm32f1xx.o(.constdata)
+    APBPrescTable                            0x08002060   Data           8  system_stm32f1xx.o(.constdata)
+    Region$$Table$$Base                      0x08002068   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08002088   Number         0  anon$$obj.o(Region$$Table)
     Key                                      0x20000000   Data           1  main.o(.data)
     KEYMAP                                   0x20000001   Data          12  main.o(.data)
     uwTickFreq                               0x20000010   Data           1  stm32f1xx_hal.o(.data)
@@ -990,9 +991,9 @@ Memory Map of the image
 
   Image Entry point : 0x080000ed
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000020a4, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000020a8, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00002084, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00002088, Max: 0x00010000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1099,10 +1100,10 @@ Memory Map of the image
     0x08001f6e   0x0000000e   Code   RO         2176    i.__scatterload_copy  mc_w.l(handlers.o)
     0x08001f7c   0x00000002   Code   RO         2177    i.__scatterload_null  mc_w.l(handlers.o)
     0x08001f7e   0x0000000e   Code   RO         2178    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x08001f8c   0x000000c0   Code   RO           16    i.main              main.o
-    0x0800204c   0x00000010   Data   RO         2118    .constdata          system_stm32f1xx.o
-    0x0800205c   0x00000008   Data   RO         2119    .constdata          system_stm32f1xx.o
-    0x08002064   0x00000020   Data   RO         2174    Region$$Table       anon$$obj.o
+    0x08001f8c   0x000000c4   Code   RO           16    i.main              main.o
+    0x08002050   0x00000010   Data   RO         2118    .constdata          system_stm32f1xx.o
+    0x08002060   0x00000008   Data   RO         2119    .constdata          system_stm32f1xx.o
+    0x08002068   0x00000020   Data   RO         2174    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000500, Max: 0x00005000, ABSOLUTE)
@@ -1125,22 +1126,22 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       266          0          0          0          0       1969   keypad.o
-       366         34          0         13        220     402401   main.o
-        36          8        236          0       1024        768   startup_stm32f103xb.o
-       164         28          0         12          0       5625   stm32f1xx_hal.o
-       198         14          0          0          0      28731   stm32f1xx_hal_cortex.o
-       158          4          0          0          0       1554   stm32f1xx_hal_dma.o
-       500         34          0          0          0       3375   stm32f1xx_hal_gpio.o
-      3348         44          0          0          0      19325   stm32f1xx_hal_i2c.o
-       312         32          0          0          0       2083   stm32f1xx_hal_msp.o
-      1272        100          0          0          0       4988   stm32f1xx_hal_rcc.o
-      1138         12          0          0          0       8623   stm32f1xx_hal_uart.o
-        56         18          0          0          0       4660   stm32f1xx_it.o
-        72         16         24          4          0       1055   system_stm32f1xx.o
+       266          0          0          0          0       2041   keypad.o
+       370         34          0         13        220     402757   main.o
+        36          8        236          0       1024        792   startup_stm32f103xb.o
+       164         28          0         12          0       5797   stm32f1xx_hal.o
+       198         14          0          0          0      28863   stm32f1xx_hal_cortex.o
+       158          4          0          0          0       1622   stm32f1xx_hal_dma.o
+       500         34          0          0          0       3471   stm32f1xx_hal_gpio.o
+      3348         44          0          0          0      19865   stm32f1xx_hal_i2c.o
+       312         32          0          0          0       2171   stm32f1xx_hal_msp.o
+      1272        100          0          0          0       5116   stm32f1xx_hal_rcc.o
+      1138         12          0          0          0       8915   stm32f1xx_hal_uart.o
+        56         18          0          0          0       4932   stm32f1xx_it.o
+        72         16         24          4          0       1123   system_stm32f1xx.o
 
     ----------------------------------------------------------------------
-      7910        344        292         32       1248     485157   Object Totals
+      7914        344        292         32       1248     487465   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         24          0          0          3          4          0   (incl. Padding)
 
@@ -1180,15 +1181,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      8032        360        292         32       1248     481845   Grand Totals
-      8032        360        292         32       1248     481845   ELF Image Totals
-      8032        360        292         32          0          0   ROM Totals
+      8036        360        292         32       1248     484153   Grand Totals
+      8036        360        292         32       1248     484153   ELF Image Totals
+      8036        360        292         32          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 8324 (   8.13kB)
+    Total RO  Size (Code + RO Data)                 8328 (   8.13kB)
     Total RW  Size (RW Data + ZI Data)              1280 (   1.25kB)
-    Total ROM Size (Code + RO Data + RW Data)       8356 (   8.16kB)
+    Total ROM Size (Code + RO Data + RW Data)       8360 (   8.16kB)
 
 ==============================================================================
 

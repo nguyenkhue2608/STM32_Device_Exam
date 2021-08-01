@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;D:\Common Lib\Device Lib\Inc</IncludePath>
+              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;E:\Thu Vien Device STM32\Device Lib\Inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -402,7 +402,7 @@
             <File>
               <FileName>BUTTON.c</FileName>
               <FileType>1</FileType>
-              <FilePath>D:\Common Lib\Device Lib\Src\BUTTON.c</FilePath>
+              <FilePath>E:\Thu Vien Device STM32\Device Lib\Src\BUTTON.c</FilePath>
             </File>
           </Files>
         </Group>

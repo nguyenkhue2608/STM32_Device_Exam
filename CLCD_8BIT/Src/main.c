@@ -106,8 +106,10 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		sprintf(LCD_send, "LCD Dem : %d", Count);
 		CLCD_SetCursor(&LCD1, 0, 0);
+		CLCD_WriteString(&LCD1, "Khue Nguyen Creator");
+		sprintf(LCD_send, "LCD Dem : %d", Count);
+		CLCD_SetCursor(&LCD1, 0, 1);
 		CLCD_WriteString(&LCD1, LCD_send);
 		Count++;
 		HAL_Delay(1000);

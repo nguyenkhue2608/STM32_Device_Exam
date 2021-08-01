@@ -3,7 +3,7 @@
 <title>Static Call Graph - [CLCD_I2C\CLCD_I2C.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image CLCD_I2C\CLCD_I2C.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Sun Aug 09 10:12:56 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat Jul 24 17:31:49 2021
 <BR><P>
 <H3>Maximum Stack Usage =        144 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -502,7 +502,7 @@ Global Symbols
 
 <P><STRONG><a name="[69]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
-<P><STRONG><a name="[35]"></a>main</STRONG> (Thumb, 120 bytes, Stack size 8 bytes, main.o(i.main))
+<P><STRONG><a name="[35]"></a>main</STRONG> (Thumb, 142 bytes, Stack size 8 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = main &rArr; CLCD_I2C_WriteString &rArr; CLCD_I2C_WriteChar &rArr; CLCD_WriteI2C &rArr; HAL_I2C_Master_Transmit &rArr; I2C_MasterRequestWrite &rArr; I2C_WaitOnMasterAddressFlagUntilTimeout
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init

@@ -1,5 +1,5 @@
-clcd_4bit\clcd.o: D:\Common Lib\Device Lib\Src\CLCD.c
-clcd_4bit\clcd.o: D:\Common Lib\Device Lib\Inc\CLCD.h
+clcd_4bit\clcd.o: E:\STM32 Device Lib\Device Lib\Src\CLCD.c
+clcd_4bit\clcd.o: E:\STM32 Device Lib\Device Lib\Inc\CLCD.h
 clcd_4bit\clcd.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 clcd_4bit\clcd.o: ../Inc/stm32f1xx_hal_conf.h
 clcd_4bit\clcd.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h

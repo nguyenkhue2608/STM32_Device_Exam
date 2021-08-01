@@ -1,5 +1,5 @@
-ds18b20\ds18b20.o: D:\Common Lib\Device Lib\Src\DS18B20.c
-ds18b20\ds18b20.o: D:\Common Lib\Device Lib\Inc\DS18B20.h
+ds18b20\ds18b20.o: E:\STM32 Device Lib\Device Lib\Src\DS18B20.c
+ds18b20\ds18b20.o: E:\STM32 Device Lib\Device Lib\Inc\DS18B20.h
 ds18b20\ds18b20.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 ds18b20\ds18b20.o: ../Inc/stm32f1xx_hal_conf.h
 ds18b20\ds18b20.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
@@ -26,4 +26,4 @@ ds18b20\ds18b20.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 ds18b20\ds18b20.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 ds18b20\ds18b20.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 ds18b20\ds18b20.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
-ds18b20\ds18b20.o: D:\Common Lib\DELAY_TIMER\inc\delay_timer.h
+ds18b20\ds18b20.o: E:\STM32 Device Lib\DELAY_TIMER\inc\delay_timer.h

@@ -1,5 +1,5 @@
-dht11\delay_timer.o: D:\Common Lib\DELAY_TIMER\src\delay_timer.c
-dht11\delay_timer.o: D:\Common Lib\DELAY_TIMER\inc\delay_timer.h
+dht11\delay_timer.o: E:\STM32 Device Lib\DELAY_TIMER\src\delay_timer.c
+dht11\delay_timer.o: E:\STM32 Device Lib\DELAY_TIMER\inc\delay_timer.h
 dht11\delay_timer.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 dht11\delay_timer.o: ../Inc/stm32f1xx_hal_conf.h
 dht11\delay_timer.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
