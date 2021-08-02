@@ -44,7 +44,7 @@
 TIM_HandleTypeDef htim4;
 
 /* USER CODE BEGIN PV */
-uint8_t Degree;
+uint8_t Degree = 100;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -100,11 +100,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		Degree++;
-		if(Degree>200) Degree = 100;
-		__HAL_TIM_SET_CAPTUREPOLARITY(&htim4, TIM_CHANNEL_1, Degree);
-		//__HAL_TIM_SET_COUNTER
-		HAL_Delay(100);
+		__HAL_TIM_SET_CAPTUREPOLARITY(&htim4, TIM_CHANNEL_1, 200);
 
   }
   /* USER CODE END 3 */

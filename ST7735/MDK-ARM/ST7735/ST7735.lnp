@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"st7735\startup_stm32f103xb.o"
+"st7735\main.o"
+"st7735\stm32f1xx_it.o"
+"st7735\stm32f1xx_hal_msp.o"
+"st7735\st7735_spi.o"
+"st7735\fonts.o"
+"st7735\stm32f1xx_hal_gpio_ex.o"
+"st7735\stm32f1xx_hal_spi.o"
+"st7735\stm32f1xx_hal.o"
+"st7735\stm32f1xx_hal_rcc.o"
+"st7735\stm32f1xx_hal_rcc_ex.o"
+"st7735\stm32f1xx_hal_gpio.o"
+"st7735\stm32f1xx_hal_dma.o"
+"st7735\stm32f1xx_hal_cortex.o"
+"st7735\stm32f1xx_hal_pwr.o"
+"st7735\stm32f1xx_hal_flash.o"
+"st7735\stm32f1xx_hal_flash_ex.o"
+"st7735\stm32f1xx_hal_exti.o"
+"st7735\stm32f1xx_hal_tim.o"
+"st7735\stm32f1xx_hal_tim_ex.o"
+"st7735\stm32f1xx_hal_uart.o"
+"st7735\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "ST7735\ST7735.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ST7735.map" -o ST7735\ST7735.axf
