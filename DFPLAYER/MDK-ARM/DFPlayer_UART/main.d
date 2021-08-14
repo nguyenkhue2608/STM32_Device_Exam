@@ -25,4 +25,4 @@ dfplayer_uart\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 dfplayer_uart\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 dfplayer_uart\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 dfplayer_uart\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
-dfplayer_uart\main.o: D:\Common Lib\Device Lib\Inc\DFPlayer.h
+dfplayer_uart\main.o: E:\STM32 Device Lib\Device Lib\Inc\DFPlayer.h

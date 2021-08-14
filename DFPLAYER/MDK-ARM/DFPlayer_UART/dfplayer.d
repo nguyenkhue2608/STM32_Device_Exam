@@ -1,5 +1,5 @@
-dfplayer_uart\dfplayer.o: D:\Common Lib\Device Lib\Src\DFPLAYER.c
-dfplayer_uart\dfplayer.o: D:\Common Lib\Device Lib\Inc\DFPLAYER.h
+dfplayer_uart\dfplayer.o: E:\STM32 Device Lib\Device Lib\Src\DFPLAYER.c
+dfplayer_uart\dfplayer.o: E:\STM32 Device Lib\Device Lib\Inc\DFPLAYER.h
 dfplayer_uart\dfplayer.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 dfplayer_uart\dfplayer.o: ../Inc/stm32f1xx_hal_conf.h
 dfplayer_uart\dfplayer.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h

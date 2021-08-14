@@ -24,18 +24,11 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <string.h>
-//#include "st7735.h"
 #include "ST7735_SPI.h"
 #include "fonts.h"
-//#include "testimg.h"
 #include "LOGO.h"
 #include "anh.h"
 #include "yua.h"
-//#include "gai.h"
-//#include "doremon.h"
-//#include "red.h"
-//#include "green.h"
-//#include "blue.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -75,10 +68,53 @@ static void MX_USART2_UART_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-void test() {
-    // Check border
+/* USER CODE END 0 */
+
+/**
+  * @brief  The application entry point.
+  * @retval int
+  */
+int main(void)
+{
+  /* USER CODE BEGIN 1 */
+
+  /* USER CODE END 1 */
+
+  /* MCU Configuration--------------------------------------------------------*/
+
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  HAL_Init();
+
+  /* USER CODE BEGIN Init */
+
+  /* USER CODE END Init */
+
+  /* Configure the system clock */
+  SystemClock_Config();
+
+  /* USER CODE BEGIN SysInit */
+
+  /* USER CODE END SysInit */
+
+  /* Initialize all configured peripherals */
+  MX_GPIO_Init();
+  MX_DMA_Init();
+  MX_SPI1_Init();
+  MX_USART2_UART_Init();
+  /* USER CODE BEGIN 2 */
+	ST7735_Init();
+  /* USER CODE END 2 */
+
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
 		ST7735_DrawImage(0,0,128, 160,(uint8_t*)gImage_yua);
 		HAL_Delay(3000);
+	
 		ST7735_WriteString(20, 100, "Censored", Font_11x18, ST7735_RED, ST7735_WHITE);
 		HAL_Delay(3000);
     ST7735_FillScreen(ST7735_BLACK);
@@ -134,52 +170,6 @@ void test() {
     ST7735_FillScreen(ST7735_WHITE);
     ST7735_WriteString(0, 0, "WHITE", Font_11x18, ST7735_BLACK, ST7735_BLUE);
     HAL_Delay(500);
-}
-/* USER CODE END 0 */
-
-/**
-  * @brief  The application entry point.
-  * @retval int
-  */
-int main(void)
-{
-  /* USER CODE BEGIN 1 */
-
-  /* USER CODE END 1 */
-
-  /* MCU Configuration--------------------------------------------------------*/
-
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
-
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
-
-  /* Configure the system clock */
-  SystemClock_Config();
-
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_DMA_Init();
-  MX_SPI1_Init();
-  MX_USART2_UART_Init();
-  /* USER CODE BEGIN 2 */
-	ST7735_Init();
-  /* USER CODE END 2 */
-
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
-		test();
 
   }
   /* USER CODE END 3 */

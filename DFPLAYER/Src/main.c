@@ -91,6 +91,8 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 	DFPLAYER_Init(&MP3, &huart1);
+	DFPLAYER_SetVolume(&MP3, 20);
+	DFPLAYER_Play(&MP3);
   /* USER CODE END 2 */
 //
   /* Infinite loop */
@@ -100,8 +102,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		DFPLAYER_PlayFileInFolder(&MP3,2,1);
-		HAL_Delay(10000);
+		HAL_Delay(20000);
+		DFPLAYER_Next(&MP3);
+		HAL_Delay(20000);
+		DFPLAYER_Prev(&MP3);
+		HAL_Delay(20000);
   }
   /* USER CODE END 3 */
 }

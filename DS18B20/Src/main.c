@@ -101,8 +101,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	Temp = DS18B20_ReadTemp(&DS1);
+		Temp = DS18B20_ReadTemp(&DS1);
 		HAL_Delay(2000);
+		
   }
   /* USER CODE END 3 */
 }
