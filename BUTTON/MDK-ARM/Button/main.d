@@ -26,4 +26,4 @@ button\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 button\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
 button\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
 button\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
-button\main.o: D:\Common Lib\Device Lib\Inc\BUTTON.h
+button\main.o: E:\STM32 Device Lib\Device Lib\Inc\BUTTON.h

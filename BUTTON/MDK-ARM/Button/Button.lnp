@@ -19,6 +19,6 @@
 "button\stm32f1xx_hal_exti.o"
 "button\system_stm32f1xx.o"
 --library_type=microlib --strict --scatter "Button\Button.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "Button.map" -o Button\Button.axf

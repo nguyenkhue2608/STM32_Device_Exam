@@ -103,18 +103,24 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	Status = BUTTON_Read(&Button1);
+		Status = BUTTON_Read(&Button1);
 		if(Status == DOUBLE_CLICK)
 		{
-			HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);
+			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
 			HAL_Delay(200);
-			HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_SET);
+			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
 			HAL_Delay(200);
-			HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);
+			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
 			HAL_Delay(200);
-			HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_SET);
+			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
 			HAL_Delay(200);
-			HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);
+			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+			HAL_Delay(200);
+			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+			HAL_Delay(200);
+			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+			HAL_Delay(200);
+			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
 			HAL_Delay(200);
 			Status = 0;
 		}
@@ -125,7 +131,22 @@ int main(void)
 		}
 		if(Status == LONGCLICK_1S)
 		{
-			HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_SET);
+			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+			HAL_Delay(1000);
+			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+			HAL_Delay(1000);
+			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+			HAL_Delay(1000);
+			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+			HAL_Delay(1000);
+			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+			HAL_Delay(1000);
+			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+			HAL_Delay(1000);
+			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+			HAL_Delay(1000);
+			HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+			HAL_Delay(1000);
 			Status = 0;
 		}
   }

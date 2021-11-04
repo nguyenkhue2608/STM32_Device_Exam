@@ -20,6 +20,6 @@
 "rfid_rc522\stm32f1xx_hal_tim_ex.o"
 "rfid_rc522\system_stm32f1xx.o"
 --library_type=microlib --strict --scatter "RFID_RC522\RFID_RC522.sct"
---summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "RFID_RC522.map" -o RFID_RC522\RFID_RC522.axf

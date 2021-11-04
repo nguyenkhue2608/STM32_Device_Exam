@@ -1,5 +1,5 @@
-button\button.o: D:\Common Lib\Device Lib\Src\BUTTON.c
-button\button.o: D:\Common Lib\Device Lib\Inc\BUTTON.h
+button\button.o: E:\STM32 Device Lib\Device Lib\Src\BUTTON.c
+button\button.o: E:\STM32 Device Lib\Device Lib\Inc\BUTTON.h
 button\button.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 button\button.o: ../Inc/stm32f1xx_hal_conf.h
 button\button.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
