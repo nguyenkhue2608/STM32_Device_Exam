@@ -277,7 +277,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>E:\STM32 Device Lib\DELAY_TIMER\src\delay_timer.c</PathWithFileName>
+      <PathWithFileName>..\..\..\STM32 Device Lib\DELAY_TIMER\src\delay_timer.c</PathWithFileName>
       <FilenameWithoutPath>delay_timer.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -289,7 +289,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>E:\STM32 Device Lib\Device Lib\Src\DHT.c</PathWithFileName>
+      <PathWithFileName>..\..\..\STM32 Device Lib\Device Lib\Src\DHT.c</PathWithFileName>
       <FilenameWithoutPath>DHT.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>

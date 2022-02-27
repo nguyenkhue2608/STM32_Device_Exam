@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;E:\STM32 Device Lib\Device Lib\Inc;E:\STM32 Device Lib\DELAY_TIMER\inc</IncludePath>
+              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;..\..\..\STM32 Device Lib\Device Lib\Inc;..\..\..\STM32 Device Lib\DELAY_TIMER\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -411,12 +411,12 @@
             <File>
               <FileName>delay_timer.c</FileName>
               <FileType>1</FileType>
-              <FilePath>E:\STM32 Device Lib\DELAY_TIMER\src\delay_timer.c</FilePath>
+              <FilePath>..\..\..\STM32 Device Lib\DELAY_TIMER\src\delay_timer.c</FilePath>
             </File>
             <File>
               <FileName>DHT.c</FileName>
               <FileType>1</FileType>
-              <FilePath>E:\STM32 Device Lib\Device Lib\Src\DHT.c</FilePath>
+              <FilePath>..\..\..\STM32 Device Lib\Device Lib\Src\DHT.c</FilePath>
             </File>
           </Files>
         </Group>

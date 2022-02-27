@@ -25,7 +25,7 @@ typedef struct
 	uint16_t Type;
 	TIM_HandleTypeDef* Timer;
 	uint16_t Pin;
-	GPIO_TypeDef* PORT;
+	GPIO_TypeDef* Port;
 	float Temp;
 	float Humi;
 }DHT_Name;
