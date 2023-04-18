@@ -27,7 +27,7 @@
 #include "OLED_LCD_SSD1306.h"
 #include "test.h"
 #include "logo2.h"
-#include "1.h"
+#include "1.h"	
 #include "2.h"
 #include "3.h"
 #include "4.h"
@@ -36,6 +36,8 @@
 #include "7.h"
 #include "8.h"
 #include "9.h"
+
+#define OLED_I2C_PORT hi2c1
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -143,19 +145,19 @@ int main(void)
     HAL_Delay(5000);
 		
 		// scroll image
-//    SSD1306_ScrollRight(&SSD1306, 0x00, 0x0f);    // scroll entire screen right
-//    HAL_Delay (2000);
-//    SSD1306_ScrollLeft(&SSD1306, 0x00, 0x0f);  // scroll entire screen left
-//    HAL_Delay (2000);
-//    SSD1306_Scrolldiagright(&SSD1306, 0x00, 0x0f);  // scroll entire screen diagonal right
-//    HAL_Delay (2000);
-//    SSD1306_Scrolldiagleft(&SSD1306, 0x00, 0x0f);  // scroll entire screen diagonal left
-//    HAL_Delay (2000);
-//    SSD1306_Stopscroll(&SSD1306);   // stop scrolling. If not done, screen will keep on scrolling
-//    SSD1306_InvertDisplay(&SSD1306, 1);   // invert the display
-//    HAL_Delay(2000);
-//    SSD1306_InvertDisplay(&SSD1306, 0);  // normalize the display
-//    HAL_Delay(2000);
+    SSD1306_ScrollRight(&SSD1306, 0x00, 0x0f);    // scroll entire screen right
+    HAL_Delay (2000);
+    SSD1306_ScrollLeft(&SSD1306, 0x00, 0x0f);  // scroll entire screen left
+    HAL_Delay (2000);
+    SSD1306_Scrolldiagright(&SSD1306, 0x00, 0x0f);  // scroll entire screen diagonal right
+    HAL_Delay (2000);
+    SSD1306_Scrolldiagleft(&SSD1306, 0x00, 0x0f);  // scroll entire screen diagonal left
+    HAL_Delay (2000);
+    SSD1306_Stopscroll(&SSD1306);   // stop scrolling. If not done, screen will keep on scrolling
+    SSD1306_InvertDisplay(&SSD1306, 1);   // invert the display
+    HAL_Delay(2000);
+    SSD1306_InvertDisplay(&SSD1306, 0);  // normalize the display
+    HAL_Delay(2000);
 		
 		//display animation
 		uint8_t loop = 5;

@@ -25,9 +25,10 @@ oled_lcd\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 oled_lcd\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 oled_lcd\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
 oled_lcd\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-oled_lcd\main.o: E:\STM32 Device Lib\Device Lib\Inc\OLED_LCD_SSD1306.h
-oled_lcd\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+oled_lcd\main.o: ../Inc/OLED_LCD_SSD1306.h
 oled_lcd\main.o: ../Inc/fonts.h
+oled_lcd\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+oled_lcd\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 oled_lcd\main.o: ../Inc/test.h
 oled_lcd\main.o: ../Inc/logo2.h
 oled_lcd\main.o: ../Inc/1.h

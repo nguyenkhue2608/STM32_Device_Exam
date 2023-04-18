@@ -1,5 +1,5 @@
-oled_lcd\oled_lcd_ssd1306.o: E:\STM32 Device Lib\Device Lib\Src\OLED_LCD_SSD1306.c
-oled_lcd\oled_lcd_ssd1306.o: E:\STM32 Device Lib\Device Lib\Inc\OLED_LCD_SSD1306.h
+oled_lcd\oled_lcd_ssd1306.o: ..\Src\OLED_LCD_SSD1306.c
+oled_lcd\oled_lcd_ssd1306.o: ../Inc/OLED_LCD_SSD1306.h
 oled_lcd\oled_lcd_ssd1306.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 oled_lcd\oled_lcd_ssd1306.o: ../Inc/stm32f1xx_hal_conf.h
 oled_lcd\oled_lcd_ssd1306.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
@@ -25,5 +25,6 @@ oled_lcd\oled_lcd_ssd1306.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_f
 oled_lcd\oled_lcd_ssd1306.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 oled_lcd\oled_lcd_ssd1306.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
 oled_lcd\oled_lcd_ssd1306.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
-oled_lcd\oled_lcd_ssd1306.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 oled_lcd\oled_lcd_ssd1306.o: ../Inc/fonts.h
+oled_lcd\oled_lcd_ssd1306.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+oled_lcd\oled_lcd_ssd1306.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

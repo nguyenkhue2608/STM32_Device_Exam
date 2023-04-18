@@ -311,7 +311,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>E:\STM32 Device Lib\Device Lib\Src\OLED_LCD_SSD1306.c</PathWithFileName>
+      <PathWithFileName>..\Src\OLED_LCD_SSD1306.c</PathWithFileName>
       <FilenameWithoutPath>OLED_LCD_SSD1306.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
