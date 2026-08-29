@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "RC522.h"
+#include "../../../lib/drivers/RC522/RC522.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -43,7 +43,7 @@
 SPI_HandleTypeDef hspi1;
 
 /* USER CODE BEGIN PV */
-//MFRC522_Name RFID1;
+MFRC522_Name RFID1;
 uint8_t CardID[5];
 uint8_t MyID[5] = {0x43, 0xdc, 0x52, 0xb6, 0x7b};
 uint8_t Status=0;
@@ -92,8 +92,7 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
-	//MFRC522_Init(&RFID1, &hspi2, CS_GPIO_Port, CS_Pin);
-	TM_MFRC522_Init();
+	MFRC522_Init(&RFID1, &hspi1, CS_GPIO_Port, CS_Pin);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -103,17 +102,17 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		HAL_Delay(100);   
-         Status = TM_MFRC522_Request(PICC_REQALL, CardID);
-         if (Status != MI_OK)
-         {
+		HAL_Delay(100);
+      Status = MFRC522_Request(&RFID1, PICC_REQALL, CardID);
+      if (Status != MI_OK)
+      {
 	        continue;
-         }
-         Status = TM_MFRC522_Anticoll(CardID);
-         if (Status != MI_OK)
-         {    
-            continue;    
-         } 
+      }
+      Status = MFRC522_Anticoll(&RFID1, CardID);
+      if (Status != MI_OK)
+      {
+        continue;
+      }
   }
   /* USER CODE END 3 */
 }

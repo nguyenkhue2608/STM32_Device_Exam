@@ -411,7 +411,7 @@
             <File>
               <FileName>ST7735_SPI.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\ST7735_LCD_TFT\ST7735_SPI.c</FilePath>
+              <FilePath>..\..\lib\drivers\LCD_TFT_ST7735\ST7735_SPI.c</FilePath>
             </File>
             <File>
               <FileName>fonts.c</FileName>

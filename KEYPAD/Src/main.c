@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "KEYPAD.h"
+#include "../../lib/drivers/KEYPAD/KEYPAD.h"
 char Key;
 /* USER CODE END Includes */
 

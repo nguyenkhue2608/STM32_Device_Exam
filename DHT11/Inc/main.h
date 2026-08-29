@@ -58,7 +58,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define DHT11_Pin GPIO_PIN_14
+/* PB6 = TIM4_CH1 (PB14 cu khong co kenh timer cho input capture) */
+#define DHT11_Pin GPIO_PIN_6
 #define DHT11_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 

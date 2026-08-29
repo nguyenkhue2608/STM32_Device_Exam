@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "DFPlayer.h"
+#include "../../lib/drivers/DFPLAYER/DFPLAYER.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

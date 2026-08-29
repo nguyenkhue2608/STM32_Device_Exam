@@ -409,9 +409,9 @@
               <FilePath>../Core/Src/stm32f1xx_hal_msp.c</FilePath>
             </File>
             <File>
-              <FileName>rc522.c</FileName>
+              <FileName>RC522.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\RC522\rc522.c</FilePath>
+              <FilePath>..\..\lib\drivers\RC522\RC522.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -24,9 +24,9 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <string.h>
-#include "ST7735_SPI.h"
-#include "fonts.h"
-#include "LOGO.h"
+#include "../../lib/drivers/LCD_TFT_ST7735/ST7735_SPI.h"
+#include "../../lib/drivers/LCD_TFT_ST7735/fonts.h"
+#include "../../lib/drivers/LCD_TFT_ST7735/LOGO.H"
 #include "anh.h"
 #include "yua.h"
 /* USER CODE END Includes */
