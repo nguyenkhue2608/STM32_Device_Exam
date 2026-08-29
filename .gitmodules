@@ -1,0 +1,3 @@
+[submodule "lib/drivers"]
+	path = lib/drivers
+	url = https://github.com/nguyenkhue2608/STM32_Device_Lib.git
