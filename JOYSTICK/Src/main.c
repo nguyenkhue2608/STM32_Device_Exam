@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "../../lib/drivers/input/JOYSTICK/JOYSTICK.h"
+#include "../../lib/drivers/input/joystick/joystick.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

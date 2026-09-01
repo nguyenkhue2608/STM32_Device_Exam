@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;..\..\lib\drivers\display\SSD1306</IncludePath>
+              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;..\..\lib\drivers\display\ssd1306</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -419,9 +419,9 @@
               <FilePath>..\Src\test.c</FilePath>
             </File>
             <File>
-              <FileName>SSD1306.c</FileName>
+              <FileName>ssd1306.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\lib\drivers\display\SSD1306\SSD1306.c</FilePath>
+              <FilePath>..\..\lib\drivers\display\ssd1306\ssd1306.c</FilePath>
             </File>
           </Files>
         </Group>

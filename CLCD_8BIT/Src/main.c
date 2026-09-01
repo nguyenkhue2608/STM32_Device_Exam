@@ -23,8 +23,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-//#include "CLCD_8BIT.h"
-#include "../../lib/drivers/display/CLCD/CLCD.h"
+//#include "CHAR_LCD_8BIT.h"
+#include "../../lib/drivers/display/char_lcd/char_lcd.h"
 #include <stdio.h>
 /* USER CODE END Includes */
 
@@ -45,7 +45,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-CLCD_Name LCD1;
+CHAR_LCD_Name LCD1;
 uint8_t Count;
 char LCD_send[16];
 /* USER CODE END PV */
@@ -91,7 +91,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-	CLCD_8BIT_Init(&LCD1, 16, 2, CS_GPIO_Port, CS_Pin, EN_GPIO_Port, EN_Pin,
+	CHAR_LCD_8BIT_Init(&LCD1, 16, 2, CS_GPIO_Port, CS_Pin, EN_GPIO_Port, EN_Pin,
 									D0_GPIO_Port, D0_Pin, D1_GPIO_Port, D1_Pin,
 									D2_GPIO_Port, D2_Pin, D3_GPIO_Port, D3_Pin,
 									D4_GPIO_Port, D4_Pin, D5_GPIO_Port, D5_Pin,
@@ -106,11 +106,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		CLCD_SetCursor(&LCD1, 0, 0);
-		CLCD_WriteString(&LCD1, "Khue Nguyen Creator");
+		CHAR_LCD_SetCursor(&LCD1, 0, 0);
+		CHAR_LCD_WriteString(&LCD1, "Khue Nguyen Creator");
 		sprintf(LCD_send, "LCD Dem : %d", Count);
-		CLCD_SetCursor(&LCD1, 0, 1);
-		CLCD_WriteString(&LCD1, LCD_send);
+		CHAR_LCD_SetCursor(&LCD1, 0, 1);
+		CHAR_LCD_WriteString(&LCD1, LCD_send);
 		Count++;
 		HAL_Delay(1000);
   }

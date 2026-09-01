@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;..\..\lib\drivers\audio\DFPLAYER</IncludePath>
+              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;..\..\lib\drivers\audio\dfplayer</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -409,9 +409,9 @@
               <FilePath>../Src/stm32f1xx_hal_msp.c</FilePath>
             </File>
             <File>
-              <FileName>DFPLAYER.c</FileName>
+              <FileName>dfplayer.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\lib\drivers\audio\DFPLAYER\DFPLAYER.c</FilePath>
+              <FilePath>..\..\lib\drivers\audio\dfplayer\dfplayer.c</FilePath>
             </File>
           </Files>
         </Group>

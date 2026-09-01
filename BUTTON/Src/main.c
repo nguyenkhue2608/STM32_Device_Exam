@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "../../lib/drivers/input/BUTTON/BUTTON.h"
+#include "../../lib/drivers/input/button/button.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

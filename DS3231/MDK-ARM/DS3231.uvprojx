@@ -335,7 +335,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;..\..\lib\drivers\rtc\DS3231</IncludePath>
+              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;..\..\lib\drivers\rtc\ds3231</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -408,9 +408,9 @@
               <FilePath>../Src/stm32f1xx_hal_msp.c</FilePath>
             </File>
             <File>
-              <FileName>DS3231.c</FileName>
+              <FileName>ds3231.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\lib\drivers\rtc\DS3231\DS3231.c</FilePath>
+              <FilePath>..\..\lib\drivers\rtc\ds3231\ds3231.c</FilePath>
             </File>
           </Files>
         </Group>

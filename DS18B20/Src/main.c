@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "../../lib/drivers/sensor/DS18B20/DS18B20.h"
+#include "../../lib/drivers/sensor/ds18b20/ds18b20.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

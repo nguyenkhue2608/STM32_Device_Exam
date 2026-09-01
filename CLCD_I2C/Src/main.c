@@ -24,7 +24,7 @@
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
-#include "../../lib/drivers/display/CLCD_I2C/CLCD_I2C.h"
+#include "../../lib/drivers/display/char_lcd_i2c/char_lcd_i2c.h"
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 
@@ -43,7 +43,7 @@
 I2C_HandleTypeDef hi2c1;
 
 /* USER CODE BEGIN PV */
-CLCD_I2C_Name LCD1;
+CHAR_LCD_I2C_Name LCD1;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -88,11 +88,11 @@ int main(void)
   MX_GPIO_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-	CLCD_I2C_Init(&LCD1,&hi2c1,0x4e,20,4);
-	CLCD_I2C_SetCursor(&LCD1, 0, 0);
-	CLCD_I2C_WriteString(&LCD1,"Khue Nguyen Creator");
-	CLCD_I2C_SetCursor(&LCD1, 0, 1);
-	CLCD_I2C_WriteString(&LCD1,"Hello anh em !");
+	CHAR_LCD_I2C_Init(&LCD1,&hi2c1,0x4e,20,4);
+	CHAR_LCD_I2C_SetCursor(&LCD1, 0, 0);
+	CHAR_LCD_I2C_WriteString(&LCD1,"Khue Nguyen Creator");
+	CHAR_LCD_I2C_SetCursor(&LCD1, 0, 1);
+	CHAR_LCD_I2C_WriteString(&LCD1,"Hello anh em !");
   /* USER CODE END 2 */
 
   /* Infinite loop */

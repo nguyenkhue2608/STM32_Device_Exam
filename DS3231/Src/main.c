@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "../../lib/drivers/rtc/DS3231/DS3231.h"
+#include "../../lib/drivers/rtc/ds3231/ds3231.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
