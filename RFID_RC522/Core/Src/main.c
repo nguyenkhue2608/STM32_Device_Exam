@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "../../../lib/drivers/RC522/RC522.h"
+#include "../../../lib/drivers/rfid/RC522/RC522.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

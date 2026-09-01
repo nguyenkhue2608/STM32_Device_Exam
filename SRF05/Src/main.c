@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "../../lib/drivers/SRF05/SRF05.h"
+#include "../../lib/drivers/sensor/SRF05/SRF05.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

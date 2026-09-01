@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "../../lib/drivers/DHT/DHT.h"
+#include "../../lib/drivers/sensor/DHT/DHT.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

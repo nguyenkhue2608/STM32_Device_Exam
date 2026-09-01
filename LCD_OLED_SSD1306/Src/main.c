@@ -24,18 +24,18 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 //#include "ssd1306.h"
-#include "../../lib/drivers/LCD_OLED_SSD1306/OLED_LCD_SSD1306.h"
-#include "../../lib/drivers/LCD_OLED_SSD1306/test.h"
-#include "../../lib/drivers/LCD_OLED_SSD1306/logo2.h"
-#include "../../lib/drivers/LCD_OLED_SSD1306/1.h"	
-#include "../../lib/drivers/LCD_OLED_SSD1306/2.h"
-#include "../../lib/drivers/LCD_OLED_SSD1306/3.h"
-#include "../../lib/drivers/LCD_OLED_SSD1306/4.h"
-#include "../../lib/drivers/LCD_OLED_SSD1306/5.h"
-#include "../../lib/drivers/LCD_OLED_SSD1306/6.h"
-#include "../../lib/drivers/LCD_OLED_SSD1306/7.h"
-#include "../../lib/drivers/LCD_OLED_SSD1306/8.h"
-#include "../../lib/drivers/LCD_OLED_SSD1306/9.h"
+#include "../../lib/drivers/display/SSD1306/SSD1306.h"
+#include "../../lib/drivers/display/SSD1306/test.h"
+#include "../../lib/drivers/display/SSD1306/logo2.h"
+#include "../../lib/drivers/display/SSD1306/1.h"	
+#include "../../lib/drivers/display/SSD1306/2.h"
+#include "../../lib/drivers/display/SSD1306/3.h"
+#include "../../lib/drivers/display/SSD1306/4.h"
+#include "../../lib/drivers/display/SSD1306/5.h"
+#include "../../lib/drivers/display/SSD1306/6.h"
+#include "../../lib/drivers/display/SSD1306/7.h"
+#include "../../lib/drivers/display/SSD1306/8.h"
+#include "../../lib/drivers/display/SSD1306/9.h"
 
 #define OLED_I2C_PORT hi2c1
 /* USER CODE END Includes */

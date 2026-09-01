@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "../../lib/drivers/CLCD/CLCD.h"
+#include "../../lib/drivers/display/CLCD/CLCD.h"
 #include <stdio.h>
 /* USER CODE END Includes */
 

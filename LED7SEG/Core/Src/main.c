@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "../../../lib/drivers/LED7SEG/LED7SEG.h"
+#include "../../../lib/drivers/display/LED7SEG/LED7SEG.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

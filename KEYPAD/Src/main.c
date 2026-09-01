@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "../../lib/drivers/KEYPAD/KEYPAD.h"
+#include "../../lib/drivers/input/KEYPAD/KEYPAD.h"
 char Key;
 /* USER CODE END Includes */
 
@@ -102,7 +102,7 @@ int main(void)
   MX_I2C1_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-	KEYPAD3X4_Init(&KeyPad, KEYMAP, GPIOA, GPIO_PIN_4, GPIOA, GPIO_PIN_5, GPIOA, GPIO_PIN_6, 
+	KEYPAD_Init(&KeyPad, KEYMAP, GPIOA, GPIO_PIN_4, GPIOA, GPIO_PIN_5, GPIOA, GPIO_PIN_6, 
 																	GPIOA, GPIO_PIN_0, GPIOA, GPIO_PIN_1,
 																	GPIOA, GPIO_PIN_2, GPIOA, GPIO_PIN_3);
 													
@@ -115,7 +115,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		Key = KEYPAD3X4_Readkey(&KeyPad);
+		Key = KEYPAD_Readkey(&KeyPad);
 		if(Key)
 		{
 			HAL_UART_Transmit(&huart1, (uint8_t*)&Key, 1, 100);

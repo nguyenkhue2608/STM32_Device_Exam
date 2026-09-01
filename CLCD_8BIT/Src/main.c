@@ -24,7 +24,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 //#include "CLCD_8BIT.h"
-#include "../../lib/drivers/CLCD/CLCD.h"
+#include "../../lib/drivers/display/CLCD/CLCD.h"
 #include <stdio.h>
 /* USER CODE END Includes */
 

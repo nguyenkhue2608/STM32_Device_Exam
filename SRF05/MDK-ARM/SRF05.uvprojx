@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;..\..\lib\drivers\SRF05</IncludePath>
+              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;..\..\lib\drivers\sensor\SRF05</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -411,7 +411,7 @@
             <File>
               <FileName>SRF05.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\lib\drivers\SRF05\SRF05.c</FilePath>
+              <FilePath>..\..\lib\drivers\sensor\SRF05\SRF05.c</FilePath>
             </File>
           </Files>
         </Group>

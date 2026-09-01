@@ -24,7 +24,7 @@
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
-#include "../../lib/drivers/CLCD_I2C/CLCD_I2C.h"
+#include "../../lib/drivers/display/CLCD_I2C/CLCD_I2C.h"
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 
