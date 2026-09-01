@@ -45,7 +45,7 @@ ADC_HandleTypeDef hadc1;
 DMA_HandleTypeDef hdma_adc1;
 
 /* USER CODE BEGIN PV */
-JOYSTICK_Name JT1;
+JOYSTICK_Device JT1;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/

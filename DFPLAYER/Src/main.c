@@ -28,7 +28,7 @@
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
-DFPLAYER_Name MP3;
+DFPLAYER_Device MP3;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/

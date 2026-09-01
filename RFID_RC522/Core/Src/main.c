@@ -43,7 +43,7 @@
 SPI_HandleTypeDef hspi1;
 
 /* USER CODE BEGIN PV */
-MFRC522_Name RFID1;
+MFRC522_Device RFID1;
 uint8_t CardID[5];
 uint8_t MyID[5] = {0x43, 0xdc, 0x52, 0xb6, 0x7b};
 uint8_t Status=0;

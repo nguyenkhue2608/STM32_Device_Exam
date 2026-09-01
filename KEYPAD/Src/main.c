@@ -47,7 +47,7 @@ I2C_HandleTypeDef hi2c1;
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
-KEYPAD_Name KeyPad;
+KEYPAD_Device KeyPad;
 char KEYMAP[NUMROWS][NUMCOLS] = {
 {'1','2','3'},
 {'4','5','6'},

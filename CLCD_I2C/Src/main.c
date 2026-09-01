@@ -43,7 +43,7 @@
 I2C_HandleTypeDef hi2c1;
 
 /* USER CODE BEGIN PV */
-CHAR_LCD_I2C_Name LCD1;
+CHAR_LCD_I2C_Device LCD1;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/

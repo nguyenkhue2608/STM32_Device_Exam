@@ -29,7 +29,7 @@
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 uint8_t device;
-DS3231_Name DS3231;
+DS3231_Device DS3231;
 /* USER CODE END PTD */
 
 /* Private define ------------------------------------------------------------*/

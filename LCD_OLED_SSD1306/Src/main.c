@@ -58,8 +58,8 @@
 I2C_HandleTypeDef hi2c1;
 
 /* USER CODE BEGIN PV */
-//SSD1306_Name SH1106;
-SSD1306_Name SSD1306;
+//SSD1306_Device SH1106;
+SSD1306_Device SSD1306;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/

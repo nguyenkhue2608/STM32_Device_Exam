@@ -39,3 +39,7 @@ desktop.ini
 *~
 .vscode/
 .idea/
+
+# STM32CubeIDE build output
+**/Debug/
+**/Release/

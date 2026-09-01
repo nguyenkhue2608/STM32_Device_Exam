@@ -44,7 +44,7 @@ float Value;
 TIM_HandleTypeDef htim1;
 
 /* USER CODE BEGIN PV */
-SRF05_Device_Name SRF1;
+SRF05_Device SRF1;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/

@@ -45,7 +45,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-CHAR_LCD_Name LCD1;
+CHAR_LCD_Device LCD1;
 uint8_t Count;
 char LCD_send[16];
 /* USER CODE END PV */

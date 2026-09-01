@@ -44,7 +44,7 @@
 TIM_HandleTypeDef htim4;
 
 /* USER CODE BEGIN PV */
-DHT_Name DHT1;
+DHT_Device DHT1;
 uint16_t Count;
 /* USER CODE END PV */
 

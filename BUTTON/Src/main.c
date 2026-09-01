@@ -42,7 +42,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 TIM_HandleTypeDef htim2;
-BUTTON_Name Button1;
+BUTTON_Device Button1;
 uint16_t Status;
 /* USER CODE BEGIN PV */
 

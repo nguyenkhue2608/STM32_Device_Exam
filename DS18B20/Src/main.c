@@ -43,7 +43,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-DS18B20_Name DS1;
+DS18B20_Device DS1;
 float Temp;
 /* USER CODE END PV */
 
